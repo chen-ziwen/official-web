@@ -1,14 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>科技产品展示 | 滚动交互官网</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cos/style.css">
 </head>
 
 <body>
+    <!-- 头部横幅 -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="section-title" data-cos="slideUp" data-cos-delay="0.1s">
+                未来科技
+            </h1>
 
+            <p class="section-subtitle" data-cos="slideUp" data-cos-delay="0.3s">
+                重新定义智能体验，突破想象的边界
+            </p>
+
+            <div data-cos="slideUp" data-cos-delay="0.5s">
+                <a href="#features" class="cta-button">探索产品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性介绍 -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title" data-cos="slideRight" data-cos-delay="0.1s">
+                突破性功能
+            </h2>
+
+            <div class="features-grid">
+                <div class="feature-card" data-cos="slideUp" data-cos-delay="0.2s">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">极速性能</h3>
+                    <p>搭载最新处理器，提供桌面级计算能力，轻松应对多任务处理</p>
+                </div>
+
+                <div class="feature-card" data-cos="slideUp" data-cos-delay="0.4s">
+                    <div class="feature-icon">🔋</div>
+                    <h3 class="feature-title">全天续航</h3>
+                    <p>智能电池管理技术，提供长达20小时连续使用时间</p>
+                </div>
+
+                <div class="feature-card" data-cos="slideUp" data-cos-delay="0.6s">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">专业影像</h3>
+                    <p>三摄系统搭配AI图像处理，在任何光线条件下都能捕捉完美画面</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="product">
+        <div class="container">
+            <div class="product-showcase">
+                <div class="product-image" data-cos="slideLeft" data-cos-delay="0.2s">
+                    <!-- 产品图片占位 -->
+                    <div
+                        style="background: linear-gradient(45deg, #4c1d95, #7e22ce); height: 500px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                        旗舰产品展示
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h2 class="section-title" data-cos="fadeIn" data-cos-delay="0.3s">创新设计</h2>
+
+                    <p data-cos="fadeIn" data-cos-delay="0.4s">
+                        采用航空级铝合金机身，重量轻却异常坚固。无缝一体化设计，兼具美感与实用性。
+                    </p>
+
+                    <div class="tech-specs">
+                        <div class="spec-item" data-cos="fadeIn" data-cos-delay="0.5s">
+                            <span>显示屏</span>
+                            <span>6.7英寸 OLED</span>
+                        </div>
+                        <div class="spec-item" data-cos="fadeIn" data-cos-delay="0.6s">
+                            <span>处理器</span>
+                            <span>Quantum X3 芯片</span>
+                        </div>
+                        <div class="spec-item" data-cos="fadeIn" data-cos-delay="0.7s">
+                            <span>存储容量</span>
+                            <span>最高1TB</span>
+                        </div>
+                    </div>
+
+                    <div data-cos="scaleIn" data-cos-delay="0.8s">
+                        <a href="#order" class="cta-button">立即订购</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术展示 -->
+    <section id="tech">
+        <div class="container">
+            <h2 class="section-title" data-cos="slideUp" data-cos-delay="0.1s">
+                核心技术
+            </h2>
+
+            <div class="features-grid">
+                <div class="feature-card" data-cos="slideRight" data-cos-delay="0.2s">
+                    <h3 class="feature-title">Neural Vision 引擎</h3>
+                    <p>每秒万亿次神经网络计算，实现实时图像优化和场景识别</p>
+                </div>
+
+                <div class="feature-card" data-cos="slideRight" data-cos-delay="0.4s">
+                    <h3 class="feature-title">Quantum Cooling 系统</h3>
+                    <p>真空腔均热板散热技术，高效导热同时保持设备安静运行</p>
+                </div>
+
+                <div class="feature-card" data-cos="slideRight" data-cos-delay="0.6s">
+                    <h3 class="feature-title">OmniSense 交互</h3>
+                    <p>多模态感知系统，整合手势、语音和眼动追踪实现自然交互</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p data-cos="fadeIn">© 2025 未来科技公司 版权所有</p>
+        </div>
+    </footer>
+
+    <!-- 集成您的 Cos 动画类 -->
+    <script src="cos/index.js"></script>
 </body>
 
 </html>

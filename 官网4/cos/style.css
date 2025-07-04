@@ -1,29 +1,93 @@
-/* 基础动画激活类 */
-.animate-active {
+/* 基础动画类 */
+.cos-init {
     opacity: 1;
     animation-fill-mode: both;
-    animation-timing-function: ease-out;
-    animation-delay: var(--animation-delay);
-    animation-duration: var(--animation-duration);
-  }
-  
-  /* 具体动画效果 */
-  .fadeInUp-animate {
-    animation-name: fadeInUp;
-  }
-  
-  @keyframes fadeInUp {
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-duration: var(--cos-duration);
+    animation-delay: var(--cos-delay);
+}
+
+/* 自定义动画关键帧 */
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translate3d(0, 30px, 0);
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
-  }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 关联CSS类 */
+.fadeIn-animate {
+    animation-name: fadeIn;
+}
+
+.slideUp-animate {
+    animation-name: slideUp;
+}
+
+.slideLeft-animate {
+    animation-name: slideLeft;
+}
+
+.slideRight-animate {
+    animation-name: slideRight;
+}
+
+.scaleIn-animate {
+    animation-name: scaleIn;
+}
   
   /* 初始隐藏元素 */
-  [data-animation-name] {
-    opacity: 0;
-  }
+[data-animation-name] {
+   opacity: 0;
+ }

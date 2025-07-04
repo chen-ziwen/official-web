@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简官网</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 引入Locomotive Scroll平滑滚动库 -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body data-scroll-container>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">MINIMAL</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">首页</a>
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#services" class="nav-link">服务</a>
+                <a href="#portfolio" class="nav-link">作品</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏 -->
+    <section class="hero container" id="home">
+        <div class="hero-content" data-scroll data-scroll-speed="1">
+            <h1 class="hero-title">简约设计<br>卓越体验</h1>
+            <p class="hero-text">我们相信简约而不简单的设计理念，专注于打造高品质、有格调的数字体验，让您的品牌脱颖而出。</p>
+            <a href="#contact" class="btn">
+                联系我们
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-image" data-scroll data-scroll-speed="-1">
+            <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="100" fill="#000" />
+                <circle cx="50" cy="50" r="30" stroke="#fff" stroke-width="0.5" fill="none" />
+                <circle cx="50" cy="50" r="20" stroke="#fff" stroke-width="0.5" fill="none" />
+                <line x1="20" y1="50" x2="80" y2="50" stroke="#fff" stroke-width="0.5" />
+                <line x1="50" y1="20" x2="50" y2="80" stroke="#fff" stroke-width="0.5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-scroll>关于我们</h2>
+            <p class="section-subtitle" data-scroll>我们是一支充满创意的团队，致力于为客户提供高质量的设计和技术解决方案。</p>
+            <div class="about">
+                <div class="about-image" data-scroll>
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#f2f2f2" />
+                        <circle cx="25" cy="25" r="10" fill="#000" />
+                        <rect x="60" y="20" width="25" height="10" fill="#000" />
+                        <rect x="15" y="60" width="70" height="25" fill="#000" />
+                    </svg>
+                </div>
+                <div class="about-content" data-scroll>
+                    <h3>我们的故事</h3>
+                    <p class="about-text">成立于2015年，我们是一家专注于设计与开发的创意机构。从最初的小团队发展到今天的规模，我们始终保持对品质的坚持和对创新的追求。</p>
+                    <p class="about-text">我们相信，好的设计不仅仅是美观，更应该解决问题，创造价值。每一个项目，我们都全力以赴，与客户深度协作，确保最终成果不仅符合而且超越期望。</p>
+                    <a href="#services" class="btn">
+                        了解服务
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title" data-scroll>我们的服务</h2>
+            <p class="section-subtitle" data-scroll>我们提供全方位的设计和开发服务，满足您的各种需求。</p>
+            <div class="service-grid">
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">◼</div>
+                    <h3 class="service-title">品牌设计</h3>
+                    <p class="service-text">从标志设计到品牌识别系统，我们帮助您建立一个独特而有力的品牌形象，让您在市场中脱颖而出。</p>
+                </div>
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">◼</div>
+                    <h3 class="service-title">网站开发</h3>
+                    <p class="service-text">创建高性能、响应式的网站，提供出色的用户体验，帮助您的业务在数字世界中取得成功。</p>
+                </div>
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">◼</div>
+                    <h3 class="service-title">用户体验设计</h3>
+                    <p class="service-text">以用户为中心的设计方法，创造直观、易用的界面和流程，提高用户满意度和转化率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-scroll>精选作品</h2>
+            <p class="section-subtitle" data-scroll>我们的一些最新项目和工作成果展示。</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-scroll>
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#f2f2f2" />
+                        <rect x="20" y="20" width="60" height="60" fill="#e0e0e0" />
+                        <circle cx="50" cy="50" r="20" fill="#d0d0d0" />
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">极简品牌设计</h3>
+                        <p class="portfolio-category">品牌设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-scroll>
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#f2f2f2" />
+                        <rect x="10" y="10" width="80" height="40" fill="#e0e0e0" />
+                        <rect x="10" y="55" width="35" height="35" fill="#d0d0d0" />
+                        <rect x="50" y="55" width="40" height="35" fill="#e0e0e0" />
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">商业网站设计</h3>
+                        <p class="portfolio-category">网页设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-scroll>
+                    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#f2f2f2" />
+                        <rect x="25" y="15" width="50" height="70" fill="#e0e0e0" />
+                        <rect x="35" y="25" width="30" height="5" fill="#d0d0d0" />
+                        <rect x="35" y="35" width="30" height="5" fill="#d0d0d0" />
+                        <rect x="35" y="45" width="30" height="5" fill="#d0d0d0" />
+                        <rect x="35" y="55" width="15" height="15" fill="#d0d0d0" />
+                    </svg>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">移动应用UI设计</h3>
+                        <p class="portfolio-category">应用设计</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-scroll>客户评价</h2>
+            <p class="section-subtitle" data-scroll>听听我们的客户怎么说。</p>
+            <div class="testimonial-container">
+                <div class="testimonial" data-scroll>
+                    <p class="testimonial-text">"他们的设计团队展现了非凡的专业素养和创造力。整个项目过程非常顺畅，最终的结果远超我们的预期。"</p>
+                    <p class="testimonial-author">王先生</p>
+                    <p class="testimonial-position">科技公司创始人</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-scroll>联系我们</h2>
+            <p class="section-subtitle" data-scroll>有任何问题或项目需求？请随时与我们联系。</p>
+            <div class="contact-grid">
+                <div class="contact-info" data-scroll>
+                    <div class="contact-item">
+                        <span class="contact-label">地址</span>
+                        <p class="contact-value">北京市朝阳区建国路88号</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">电话</span>
+                        <p class="contact-value">+86 123 4567 8910</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">邮箱</span>
+                        <p class="contact-value">contact@minimal.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">工作时间</span>
+                        <p class="contact-value">周一至周五: 9:30 - 18:30</p>
+                    </div>
+                </div>
+                <form class="contact-form" data-scroll>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="电子邮箱">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="您的留言"></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        发送信息
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">MINIMAL</div>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">首页</a>
+                <a href="#about" class="footer-link">关于</a>
+                <a href="#services" class="footer-link">服务</a>
+                <a href="#portfolio" class="footer-link">作品</a>
+                <a href="#contact" class="footer-link">联系</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-link">微</a>
+                <a href="#" class="social-link">微</a>
+                <a href="#" class="social-link">抖</a>
+                <a href="#" class="social-link">B</a>
+            </div>
+            <p class="copyright">© 2023 MINIMAL. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+
+</html>
